@@ -1,0 +1,67 @@
+.domain-page {
+  min-height: 100vh;
+}
+
+.domain-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.mentors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.mentor-card {
+  background-color: var(--secondary-dark);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-name {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.mentor-domain {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.mentor-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.connect-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.connect-btn:hover {
+  background-color: #00a3bd;
+}
+
+@media screen and (max-width: 768px) {
+  .mentors-grid {
+    grid-template-columns: 1fr;
+  }
+}
